@@ -54,24 +54,44 @@ class Point2d {
 			System.out.println("Debug: " + s);
 	}
 
+	/**
+	 * Turn debuging on/off
+	 * @param b
+	 */
 	public void setDebug (boolean b) {
 		this.debug = b;
 	}
 
+	/**
+	 * Set x coordinate
+	 * @param px coordinate of point
+	 */
 	public void setX(double px) {
 		dprint ("setX(): Changing value of X from " + x + " to " + px );
 		this.x = px;
 	}
 
+	/**
+	 * returns x-coordinate
+	 * @return x-coordinate of point
+	 */
 	public double getX() {
 		return x;
 	}
 
+	/**
+	 * Sets y-coordinate
+	 * @param py of point
+	 */
 	public void setY(double py)  {
 		dprint ("setY(): Changing value of Y from " + y + " to " + py );
 		this.y = py;
 	}
 
+	/**
+	 * returns y-coordinate
+	 * @return y-coordinate of point
+	 */
 	public double getY() {
 		return y;
 	}
