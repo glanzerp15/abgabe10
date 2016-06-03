@@ -96,13 +96,20 @@ class Point2d {
 		return y;
 	}
 
+	/**
+	 * Sets y and x coordinate
+	 * @param px s
+	 * @param py
+	 */
 	public void setXY(double px, double py) {
 		this.x = px;
 		this.y = py;
 	}
 
-	/*
-	 * Distanz zwischen zwei Punkten wird berechnet und als Double-Zahl zurückgegeben
+	/**
+	 * Calculate the distance between two Points
+	 * @param pt 
+	 * @return  distance between this to pt
 	 */
 	public double distanceFrom (Point2d pt) {
 		double distanz;
@@ -116,8 +123,9 @@ class Point2d {
 		return distanz;
 	}
 
-	/*
-	 * Distanz zwischen Ursprung und Punkt wird berechnet und als Double-Zahl zurückgegeben
+	/**
+	 * Calculates the distance from the origin to the point
+	 * @return distance
 	 */
 	public double distanceFromOrigin () {
 		double distanz;
